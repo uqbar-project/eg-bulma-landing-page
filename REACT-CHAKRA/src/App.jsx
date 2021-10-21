@@ -12,6 +12,7 @@ import { ColorModeSwitcher } from './ColorModeSwitcher'
 import { Logo } from './Logo'
 import Navbar from './components/Navbar'
 import { extendTheme } from "@chakra-ui/react"
+import Introduccion from './components/Introduccion'
 
 const theme = extendTheme({
   colors: {
@@ -25,35 +26,8 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Navbar />
-      <section class="hero" id="about">
-        <div class="container animate__animated animate__shakeX">
-          <div class="columns">
-            <div class="column">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image">
-                    <img src="assets/images/sal.jpg" alt="jane-doe" loading="lazy" class="hero-img" />
-                  </figure>
-                </div>
-              </div>
-            </div>
-            <div class="column is-flex is-align-items-center">
-              <div class="card">
-                <div class="card-content">
-                  <p class="title">¡Hay Equipo!</p>
-                  <div class="content">
-                    Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi
-                    porta
-                    gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes,
-                    nascetur
-                    ridiculus mus. Cras mattis consectetur purus sit amet fermentum.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Box paddingTop={8} paddingX={48}>
+      <Introduccion />
 
       <section class="section">
         <div class="container">
@@ -158,7 +132,7 @@ function App() {
                 <div class="card-content">
                   <p class="has-text-weight-bold"> Adidas Sports </p>
                   <div class="content">
-                    <img src="assets/images/adidas.JPG" alt="adidas-sports" loading="lazy"
+                    <img src="images/adidas.JPG" alt="adidas-sports" loading="lazy"
                       class="project-pic" />
                     <p class="project-details">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
@@ -175,7 +149,7 @@ function App() {
                 <div class="card-content">
                   <p class="has-text-weight-bold"> Nike Experience </p>
                   <div class="content">
-                    <img src="assets/images/nike.JPG" alt="nike-expeience" loading="lazy"
+                    <img src="images/nike.JPG" alt="nike-expeience" loading="lazy"
                       class="project-pic" />
                     <p class="project-details">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
@@ -192,7 +166,7 @@ function App() {
                 <div class="card-content">
                   <p class="has-text-weight-bold"> Puma Runners </p>
                   <div class="content">
-                    <img src="assets/images/puma.JPG" alt="puma-runners" loading="lazy"
+                    <img src="images/puma.JPG" alt="puma-runners" loading="lazy"
                       class="project-pic" />
                     <p class="project-details">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
@@ -281,6 +255,7 @@ function App() {
           </p>
         </div>
       </footer>
+      </Box>
     </ChakraProvider>
   )
 }
