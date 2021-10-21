@@ -10,7 +10,7 @@ import { ReactComponent as GitIcon } from '../../assets/icons/icons8-git.svg'
 /* TODO: Usar un map para la lista de tecnologias */
 export default function TecnologiasSection() {
   return (
-    <Box as="section">
+    <Box as="section" id="Habilidades">
       <Center>
         <Heading>Tecnologías</Heading>
       </Center>

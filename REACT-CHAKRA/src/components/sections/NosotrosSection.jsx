@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function NosotrosSection() {
   return (
-    <Box as="section">
+    <Box as="section" id="Nosotros">
       {/* TODO: Reutilizar con un componente Card */}
       <Box
         boxShadow="lg"

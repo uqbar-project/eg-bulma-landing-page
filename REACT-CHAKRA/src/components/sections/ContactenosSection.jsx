@@ -8,7 +8,7 @@ import { Button } from '@chakra-ui/button'
 /* TODO: Exportar a un componente para hacer un map */
 export default function ContactenosSection() {
   return (
-    <Box as="section" width="100%">
+    <Box as="section" width="100%" id="Contactos">
       <Box boxShadow="lg" padding={4} border={`1px solid rgba(158, 158, 158, 0.1)`}>
         <Center paddingY={6}>
           <Heading>Contactenos</Heading>

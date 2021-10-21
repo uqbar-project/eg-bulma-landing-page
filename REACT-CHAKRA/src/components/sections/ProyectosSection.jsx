@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function ProyectosSection() {
   return (
-    <Box as="section">
+    <Box as="section" id="Proyectos">
       <Center>
         <Heading>Proyectos Implementados</Heading>
       </Center>

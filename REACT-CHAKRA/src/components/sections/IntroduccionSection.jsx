@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function IntroduccionSection() {
   return (
-    <HStack spacing={8} as="section" id="about">
+    <HStack spacing={8} as="section">
       <Box boxShadow="lg">
         <Image src="images/sal.jpg" alt="jane-doe" loading="lazy" objectFit="cover" />
       </Box>
