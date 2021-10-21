@@ -12,7 +12,9 @@ import { ColorModeSwitcher } from './ColorModeSwitcher'
 import { Logo } from './Logo'
 import Navbar from './components/Navbar'
 import { extendTheme } from "@chakra-ui/react"
-import Introduccion from './components/Introduccion'
+import Introduccion from './components/sections/IntroduccionSection'
+import NosotrosSection from './components/sections/NosotrosSection'
+import IntroduccionSection from './components/sections/IntroduccionSection'
 
 const theme = extendTheme({
   colors: {
@@ -27,100 +29,8 @@ function App() {
     <ChakraProvider theme={theme}>
       <Navbar />
       <Box paddingTop={8} paddingX={48}>
-      <Introduccion />
-
-      <section class="section">
-        <div class="container">
-          <div class="columns">
-            <div class="column">
-              <div class="box has-text-centered">
-                <h1 class="title">Nosotros</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-                  nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-                  autem deleniti cupiditate molestias quis unde quae totam porro dicta
-                  iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-                  nostrum dolor minus, libero delectus praesentium perferendis
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-                  consequuntur labore? Ea totam voluptas amet!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      <section class="section has-text-centered">
-        <div class="container">
-          <h1 class="title">Tecnologías</h1>
-          <div class="columns">
-            <div class="column is-flex is-justify-content-center">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image is-128x128">
-                    <img src="assets/icons/icons8-html-5.svg" alt="" loading="lazy"
-                      class="icon icon-card" />
-                  </figure>
-                </div>
-              </div>
-            </div>
-            <div class="column  is-flex is-justify-content-center">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image is-128x128">
-                    <img src="assets/icons/icons8-css3.svg" alt="" loading="lazy" class="icon icon-card" />
-                  </figure>
-                </div>
-              </div>
-            </div>
-            <div class="column is-flex is-justify-content-center">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image is-128x128">
-                    <img src="assets/icons/icons8-javascript.svg" alt="" loading="lazy"
-                      class="icon icon-card" />
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="columns">
-            <div class="column is-flex is-justify-content-center">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image is-128x128">
-                    <img src="assets/icons/icons8-bootstrap.svg" alt="" loading="lazy" />
-                  </figure>
-                </div>
-              </div>
-            </div>
-            <div class="column  is-flex is-justify-content-center">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image is-128x128">
-                    <img src="assets/icons/icons8-react-native.svg" alt="" loading="lazy" />
-                  </figure>
-                </div>
-              </div>
-            </div>
-            <div class="column is-flex is-justify-content-center">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image is-128x128">
-                    <img src="assets/icons/icons8-git.svg" alt="" loading="lazy" />
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <IntroduccionSection />
+      <NosotrosSection />
 
 
       <section class="section has-text-centered">

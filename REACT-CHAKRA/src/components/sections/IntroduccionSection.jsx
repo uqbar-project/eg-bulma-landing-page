@@ -2,7 +2,7 @@ import { Image } from '@chakra-ui/image'
 import { Box, Heading, HStack, Text } from '@chakra-ui/layout'
 import React from 'react'
 
-export default function Introduccion() {
+export default function IntroduccionSection() {
   return (
     <HStack spacing={8} as="section" id="about">
       <Box boxShadow="lg">
