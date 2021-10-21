@@ -1,7 +1,7 @@
 import React from 'react'
 import {
   ChakraProvider,
-  Box
+  VStack
 } from '@chakra-ui/react'
 import Navbar from './components/Navbar'
 import { customTheme as theme } from './style/theme'
@@ -18,14 +18,14 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Navbar />
-      <Box paddingTop={8} paddingBottom={16} paddingX={48}>
+      <VStack paddingTop={8} paddingBottom={16} paddingX={48} spacing={8}>
         <IntroduccionSection />
         <NosotrosSection />
         <TecnologiasSection />
         <ProyectosSection />
         <ContectenosSection />
         <FloatingIcons />
-      </Box>
+      </VStack>
       <Footer />
     </ChakraProvider>
   )
