@@ -8,6 +8,7 @@ import { ReactComponent as ReactIcon } from '../../assets/icons/icons8-react-nat
 import { ReactComponent as GitIcon } from '../../assets/icons/icons8-git.svg'
 import { useMediaQuery } from '@chakra-ui/media-query'
 import { tabletMediaQuery } from '../../style/mediaQueries'
+import StyledCard from '../StyledCard'
 
 /* TODO: Usar un map para la lista de tecnologias */
 export default function TecnologiasSection() {
@@ -21,30 +22,29 @@ export default function TecnologiasSection() {
 
       <Center marginTop={8}>
         <SimpleGrid as="section" columns={3} spacingX={matchesTablet ? 16 : 64} spacingY={10} paddingX={matchesTablet ? 0 : 32}>
-          {/* TODO: Implementar icon card component */}
-          <Box width="calc(50px + 40%)" borderRadius="5%" boxShadow="lg">
+          <StyledCard width="calc(50px + 40%)" borderRadius="5%">
             <HTML5Icon alt="HTML5 Icon" />
-          </Box>
+          </StyledCard>
 
-          <Box width="calc(50px + 40%)" borderRadius="5%" boxShadow="lg">
+          <StyledCard width="calc(50px + 40%)" borderRadius="5%">
             <JavascriptIcon alt="Javascript icon" />
-          </Box>
+          </StyledCard>
 
-          <Box width="calc(50px + 40%)" borderRadius="5%" boxShadow="lg">
+          <StyledCard width="calc(50px + 40%)" borderRadius="5%">
             <CSS3Icon alt="CSS3 icon" />
-          </Box>
+          </StyledCard>
 
-          <Box width="calc(50px + 40%)" borderRadius="5%" boxShadow="lg">
+          <StyledCard width="calc(50px + 40%)" borderRadius="5%">
             <BootstrapIcon alt="Bootstrap icon" />
-          </Box>
+          </StyledCard>
 
-          <Box width="calc(50px + 40%)" borderRadius="5%" boxShadow="lg">
+          <StyledCard width="calc(50px + 40%)" borderRadius="5%">
             <ReactIcon alt="React icon" />
-          </Box>
+          </StyledCard>
 
-          <Box width="calc(50px + 40%)" borderRadius="5%" boxShadow="lg">
+          <StyledCard width="calc(50px + 40%)" borderRadius="5%">
             <GitIcon alt="Git icon" />
-          </Box>
+          </StyledCard>
         </SimpleGrid >
       </Center >
     </Box>
