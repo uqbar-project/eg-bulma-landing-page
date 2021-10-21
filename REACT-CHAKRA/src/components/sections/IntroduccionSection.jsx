@@ -9,11 +9,13 @@ export default function IntroduccionSection() {
         <Image src="images/sal.jpg" alt="jane-doe" loading="lazy" objectFit="cover" />
       </Box>
 
+      {/* TODO: Reutilizar en un component card */}
       <Box
         width="60%"
         boxShadow="lg"
         paddingX={6}
         paddingY={8}
+        border={`1px solid rgba(158, 158, 158, 0.1)`}
       >
         <Heading>¡Hay Equipo!</Heading>
         <Text marginTop={4}>
