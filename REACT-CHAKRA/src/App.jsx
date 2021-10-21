@@ -9,7 +9,7 @@ import NosotrosSection from './components/sections/NosotrosSection'
 import IntroduccionSection from './components/sections/IntroduccionSection'
 import TecnologiasSection from './components/sections/TecnologiasSection'
 import ProyectosSection from './components/sections/ProyectosSection'
-import ContectenosSection from './components/sections/ContectenosSection'
+import ContactenosSection from './components/sections/ContactenosSection'
 import FloatingIcons from './components/FloatingIcons'
 import Footer from './components/Footer'
 
@@ -23,7 +23,7 @@ function App() {
         <NosotrosSection />
         <TecnologiasSection />
         <ProyectosSection />
-        <ContectenosSection />
+        <ContactenosSection />
         <FloatingIcons />
       </VStack>
       <Footer />
