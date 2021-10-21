@@ -1,0 +1,17 @@
+.my-img-logo {
+    background-color: white;
+    border-radius: 50%;
+    margin: 5px;
+  }
+  
+  .socials {
+    position: fixed;
+    right: 0.5%;
+    bottom: 50%;
+  }
+  
+  .scroll-up {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+  }
