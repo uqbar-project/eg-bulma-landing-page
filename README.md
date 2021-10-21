@@ -32,11 +32,9 @@ Estas son las opciones que podemos usar para controlar el ancho de columna:
 ## Ej: Login
 ![pantalla_uno](./readme_images/readme_8.JPG)
 
-Ejemplo de maquetado para una landing Pages.
-
+## Links de Ejemplos:
 
 https://javifont.medium.com/aprende-bulma-en-5-minutos-3c919baaf41b
-
 
 http://developinginspanish.com/2018/04/09/aprende-bulma-en-5-minutos/
 
