@@ -7,6 +7,7 @@ import Navbar from './components/Navbar'
 import { customTheme as theme } from './style/theme'
 import NosotrosSection from './components/sections/NosotrosSection'
 import IntroduccionSection from './components/sections/IntroduccionSection'
+import TecnologiasSection from './components/sections/TecnologiasSection'
 
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
       <Box paddingTop={8} paddingX={48}>
         <IntroduccionSection />
         <NosotrosSection />
-
+        <TecnologiasSection />
+        
         <section class="section has-text-centered">
           <div class="container">
             <h1 class="title">Proyectos Implementados</h1>
