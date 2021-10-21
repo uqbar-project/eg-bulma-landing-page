@@ -63,6 +63,6 @@ export default function ProyectosSection() {
           </Center>
         </Box>
       </HStack>
-    </Box >
+    </Box>
   )
 }
