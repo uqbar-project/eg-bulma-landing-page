@@ -8,6 +8,7 @@ import { customTheme as theme } from './style/theme'
 import NosotrosSection from './components/sections/NosotrosSection'
 import IntroduccionSection from './components/sections/IntroduccionSection'
 import TecnologiasSection from './components/sections/TecnologiasSection'
+import ProyectosSection from './components/sections/ProyectosSection'
 
 
 function App() {
@@ -18,66 +19,7 @@ function App() {
         <IntroduccionSection />
         <NosotrosSection />
         <TecnologiasSection />
-        
-        <section class="section has-text-centered">
-          <div class="container">
-            <h1 class="title">Proyectos Implementados</h1>
-            <div class="columns">
-              <div class="column is-4">
-                <div class="card">
-                  <div class="card-content">
-                    <p class="has-text-weight-bold"> Adidas Sports </p>
-                    <div class="content">
-                      <img src="images/adidas.JPG" alt="adidas-sports" loading="lazy"
-                        class="project-pic" />
-                      <p class="project-details">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-                        ratione vel inventore labore commodi modi quos culpa aut saepe!
-                        Alias!
-                      </p>
-                      <button class="button is-danger is-large is-inverted">¡Click!</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="column is-4">
-                <div class="card">
-                  <div class="card-content">
-                    <p class="has-text-weight-bold"> Nike Experience </p>
-                    <div class="content">
-                      <img src="images/nike.JPG" alt="nike-expeience" loading="lazy"
-                        class="project-pic" />
-                      <p class="project-details">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-                        ratione vel inventore labore commodi modi quos culpa aut saepe!
-                        Alias!
-                      </p>
-                      <button class="button is-danger is-large is-inverted">¡Click!</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="column is-4">
-                <div class="card">
-                  <div class="card-content">
-                    <p class="has-text-weight-bold"> Puma Runners </p>
-                    <div class="content">
-                      <img src="images/puma.JPG" alt="puma-runners" loading="lazy"
-                        class="project-pic" />
-                      <p class="project-details">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-                        ratione vel inventore labore commodi modi quos culpa aut saepe!
-                        Alias!
-                      </p>
-                      <button class="button is-danger is-large is-inverted">¡Click!</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </section>
+        <ProyectosSection />
 
         <section class="section">
           <div class="container">
