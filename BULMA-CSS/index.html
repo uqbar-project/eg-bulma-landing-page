@@ -13,48 +13,44 @@
 
     <!-- Animate CSS CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <title>Run App | Team Developers</title>
+    <title>Run App Bulma Css| Team Developers</title>
 </head>
 
 <body>
-
     <nav class="navbar is-danger" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <img class= "my-img-logo" src="assets/images/pelota_50.png" />
-
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+            <img class="my-img-logo" src="assets/images/pelota_50.png" />
+            <h1 class="is-size-2">RUN APP</h1>
+            <button class="navbar-burger is-danger button" aria-label="menu" aria-expanded="false"
                 data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
-            </a>
+            </button>
         </div>
-
-        <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-                <h1 class="navbar-item">
-                    RUN APP
-                </h1>
-
-            </div>
-
-            <div class="navbar-end">
-                <a class="navbar-item">
-                    Nosotros
-                </a>
-
-                <a class="navbar-item">
-                    Habilidades
-                </a>
-                <a class="navbar-item">
-                    Proyectos
-                </a>
-                <a class="navbar-item">
-                    Contacto
-                </a>
+        <div class="navbar-menu">
+            <div class="navbar-end has-text-centered">
+                <a class="navbar-item" href="#">Nosotros</a>
+                <a class="navbar-item" href="#">Habilidades</a>
+                <a class="navbar-item" href="#">Proyectos</a>
+                <a class="navbar-item" href="#">Contacto</a>
             </div>
         </div>
     </nav>
+
+    <section class="hero" id="about">
+        <img src="assets/images/sal.jpg" alt="jane-doe" loading="lazy" class="hero-img" />
+        <div class="bio animate__animated animate__shakeX">
+            <h2 class="bio-title">¡Hay Equipo!</h2>
+            <p class="bio-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
+                dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
+                inventore tempore minus nemo, iste ullam illo laboriosam maiores
+                repudiandae quos!
+            </p>
+        </div>
+    </section>
+
 
     <section class="section">
         <div class="container">
@@ -237,6 +233,13 @@
         </div>
         <!-- /container -->
     </section>
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
