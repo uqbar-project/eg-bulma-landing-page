@@ -3,6 +3,9 @@ import { Box, Heading, HStack, Link, Spacer } from '@chakra-ui/layout'
 import React from 'react'
 
 export default function Navbar() {
+
+  const menuItems = ['Nosotros', 'Habilidades', 'Proyectos', 'Contactos']
+
   return (
     <HStack
       as="nav"
@@ -27,10 +30,7 @@ export default function Navbar() {
 
       <HStack 
       spacing={4}>
-          <Link href="#">Nosotros</Link>
-          <Link href="#">Habilidades</Link>
-          <Link href="#">Proyectos</Link>
-          <Link href="#">Contacto</Link>
+        {menuItems.map((item) => <Link href={`#${item}`}>{item}</Link>)}
       </HStack>
     </HStack>
   )
