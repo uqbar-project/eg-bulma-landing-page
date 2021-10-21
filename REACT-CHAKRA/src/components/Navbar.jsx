@@ -15,7 +15,7 @@ export default function Navbar() {
       paddingY={4}
       paddingX={8}
     >
-      <Avatar size="lg" src="images/pelota_50.png" />
+      <Avatar size="lg" src="images/pelota_50.png" backgroundColor="white" />
       <Heading >RUN APP</Heading>
 
       <Spacer />
