@@ -18,7 +18,7 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Navbar />
-      <VStack paddingTop={8} paddingBottom={16} paddingX={48} spacing={8}>
+      <VStack paddingTop={8} paddingBottom={16} paddingX={48} spacing={16}>
         <IntroduccionSection />
         <NosotrosSection />
         <TecnologiasSection />
