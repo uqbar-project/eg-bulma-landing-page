@@ -11,7 +11,7 @@
   </div>
   <div class="navbar-menu">
     <div class="navbar-end has-text-centered">
-      <a  *ngFor="let item of nav_text" class="navbar-item" href="#">{{item}}</a>
+      <a *ngFor="let item of nav_text" class="navbar-item" href="#">{{item}}</a>
     </div>
   </div>
 </nav>
@@ -72,7 +72,6 @@
   </div>
 </section>
 
-
 <section class="section has-text-centered">
   <div class="container">
     <h1 class="title">Tecnologías</h1>
@@ -96,7 +95,7 @@
             </figure>
           </div>
         </div>
-      </div>    
+      </div>
     </div>
   </div>
 </section>
@@ -179,10 +178,9 @@
 </section>
 
 <div class="socials">
-  <a *ngFor="let i of social_icons" href="#" target="_blank"><img src= {{i.name}} alt={{i.value_alt}} loading="lazy"
+  <a *ngFor="let i of social_icons" href="#" target="_blank"><img src={{i.name}} alt={{i.value_alt}} loading="lazy"
       class="image is-32x32" /></a>
 </div>
-
 
 <footer class="footer">
   <div class="content has-text-centered">
