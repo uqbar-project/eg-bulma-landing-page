@@ -1,68 +1,43 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Frameworks CSS in JS con Chakra UI
 
-## Available Scripts
+Este proyecto todavía esta en progreso pero en la [documentación](https://chakra-ui.com/docs/getting-started) de Chakra pueden encontrar una guía de como agregarlo al proyecto, existen dos alternativas que son las siguientes:
 
-In the project directory, you can run:
+## Opcion 1 (recomendada)
+La opcion mas simple es hacer el setup inicial del proyecto con la plantilla que nos provee Chakra.
+Al ejecutar el comando ```npx create-react-app``` podemos utilizar una plantilla y asi iniciar un proyecto con una configuracion inicial diferente a la por defecto, para iniciar un proyecto con la configuracion de Chakra listo para usar podemos usar el siguiente comando:
 
-### `yarn start`
+### Usando npm
+```bash
+npx create-react-app runtime-react --template @chakra-ui
+```
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Usando yarn
+```bash
+yarn create react-app runtime-react --template @chakra-ui
+```
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Opcion 2
+Si ya tenemos el proyecto iniciado con ```create-react-app``` sin la plantilla podemos agregar Chakra al proyecto con el siguiente comando:
 
-### `yarn test`
+### Usando npm
+```bash
+npm i @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^4
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Usando yarn
+```bash
+yarn add @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^4
+```
 
-### `yarn build`
+Luego debemos encerrar todo componente que este dentro de nuestro elemento root (```App.jsx```) en un wrapper llamado ```ChakraProvider```.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```javascript
+import { ChakraProvider } from "@chakra-ui/react"
+function App() {
+  return (
+    <ChakraProvider>
+      // Contenido
+    </ChakraProvider>
+  )
+}
+```
