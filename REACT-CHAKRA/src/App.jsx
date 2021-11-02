@@ -12,13 +12,16 @@ import ProyectosSection from './components/sections/ProyectosSection'
 import ContactenosSection from './components/sections/ContactenosSection'
 import FloatingIcons from './components/FloatingIcons'
 import Footer from './components/Footer'
-
+import { useMediaQuery } from '@chakra-ui/media-query'
+import { tabletMediaQuery } from './style/mediaQueries'
 
 function App() {
+  const [matchesTablet] = useMediaQuery(tabletMediaQuery)
+
   return (
     <ChakraProvider theme={theme}>
       <Navbar />
-      <VStack paddingTop={8} paddingBottom={16} paddingX={48} spacing={16}>
+      <VStack paddingTop={8} paddingBottom={16} paddingX={matchesTablet ? 16 : 32} spacing={16}>
         <IntroduccionSection />
         <NosotrosSection />
         <TecnologiasSection />

@@ -22,27 +22,27 @@ export default function TecnologiasSection() {
       <Center marginTop={8}>
         <SimpleGrid as="section" columns={3} spacingX={matchesTablet ? 16 : 64} spacingY={10} paddingX={matchesTablet ? 0 : 32}>
           {/* TODO: Implementar icon card component */}
-          <Box width="calc(25px + 50%)" borderRadius="5%" boxShadow="lg">
+          <Box width="calc(50px + 40%)" borderRadius="5%" boxShadow="lg">
             <HTML5Icon alt="HTML5 Icon" />
           </Box>
 
-          <Box width="calc(25px + 50%)" borderRadius="5%" boxShadow="lg">
+          <Box width="calc(50px + 40%)" borderRadius="5%" boxShadow="lg">
             <JavascriptIcon alt="Javascript icon" />
           </Box>
 
-          <Box width="calc(25px + 50%)" borderRadius="5%" boxShadow="lg">
+          <Box width="calc(50px + 40%)" borderRadius="5%" boxShadow="lg">
             <CSS3Icon alt="CSS3 icon" />
           </Box>
 
-          <Box width="calc(25px + 50%)" borderRadius="5%" boxShadow="lg">
+          <Box width="calc(50px + 40%)" borderRadius="5%" boxShadow="lg">
             <BootstrapIcon alt="Bootstrap icon" />
           </Box>
 
-          <Box width="calc(25px + 50%)" borderRadius="5%" boxShadow="lg">
+          <Box width="calc(50px + 40%)" borderRadius="5%" boxShadow="lg">
             <ReactIcon alt="React icon" />
           </Box>
 
-          <Box width="calc(25px + 50%)" borderRadius="5%" boxShadow="lg">
+          <Box width="calc(50px + 40%)" borderRadius="5%" boxShadow="lg">
             <GitIcon alt="Git icon" />
           </Box>
         </SimpleGrid >

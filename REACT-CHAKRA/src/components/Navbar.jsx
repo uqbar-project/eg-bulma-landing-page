@@ -1,21 +1,21 @@
 import { Avatar } from '@chakra-ui/avatar'
 import { IconButton } from '@chakra-ui/button'
 import { HamburgerIcon } from '@chakra-ui/icons'
-import { Heading, HStack, Link, Spacer, VStack } from '@chakra-ui/layout'
+import { Heading, HStack, Link, Spacer } from '@chakra-ui/layout'
 import { Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/menu'
-import { useMediaQuery } from '@react-hook/media-query'
-import { mobileMediaQuery, tabletMediaQuery } from '../style/mediaQueries'
+import { useMediaQuery } from '@chakra-ui/media-query'
+import { tabletMediaQuery } from '../style/mediaQueries'
 
 export default function Navbar() {
   /* TODO: Esto seria mejor manejarlo con un custom hook */
-  const matchesTablet = useMediaQuery(tabletMediaQuery)
+  const [matchesTablet] = useMediaQuery(tabletMediaQuery)
 
   const menuItems = ['Nosotros', 'Habilidades', 'Proyectos', 'Contactos']
 
   const scrollTo = (location) => {
     const menuElement = document.getElementById(location)
     const extraOffset = 32 //px
-    
+
     window.scrollTo({
       top: menuElement.getBoundingClientRect().top + window.pageYOffset - extraOffset,
       behavior: 'smooth'

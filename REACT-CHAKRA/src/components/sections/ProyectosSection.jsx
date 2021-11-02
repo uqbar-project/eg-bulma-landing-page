@@ -1,13 +1,12 @@
 import { Button } from '@chakra-ui/button'
 import { Image } from '@chakra-ui/image'
-import { Box, Center, Flex, Heading, HStack, Text } from '@chakra-ui/layout'
+import { Box, Center, Flex, Heading, Text } from '@chakra-ui/layout'
 import { useMediaQuery } from '@chakra-ui/media-query'
 import React from 'react'
 import { tabletMediaQuery } from '../../style/mediaQueries'
 
 export default function ProyectosSection() {
   const [matchesTablet] = useMediaQuery(tabletMediaQuery)
-  const a = matchesTablet ? 'column' : 'row'
   return (
     <Box as="section" id="Proyectos">
       <Center>
@@ -15,7 +14,7 @@ export default function ProyectosSection() {
       </Center>
 
       {/* TODO: extraer en un component card y hacer un map*/}
-      <Flex direction={a} marginTop={4} spacing={8}>
+      <Flex direction={matchesTablet ? 'column' : 'row'} marginTop={4} gridGap={8}>
         <Box padding={8} boxShadow="lg" border={`1px solid rgba(158, 158, 158, 0.1)`}>
           <Center>
             <Heading size="sm">Adidas Sports</Heading>
