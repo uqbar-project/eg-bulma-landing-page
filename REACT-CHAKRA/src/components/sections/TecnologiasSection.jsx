@@ -10,7 +10,15 @@ import { useMediaQuery } from '@chakra-ui/media-query'
 import { tabletMediaQuery } from '../../style/mediaQueries'
 import StyledCard from '../StyledCard'
 
-/* TODO: Usar un map para la lista de tecnologias */
+
+const tecnologias = [
+  { Svg: HTML5Icon, alt: 'HTML5 Icon' },
+  { Svg: JavascriptIcon, alt: 'Javascript Icon' },
+  { Svg: CSS3Icon, alt: 'CSS3 Icon' },
+  { Svg: BootstrapIcon, alt: 'Bootstrap Icon' },
+  { Svg: ReactIcon, alt: 'React Icon' },
+  { Svg: GitIcon, alt: 'Git Icon' },
+]
 export default function TecnologiasSection() {
   const [matchesTablet] = useMediaQuery(tabletMediaQuery)
 
@@ -22,29 +30,13 @@ export default function TecnologiasSection() {
 
       <Center marginTop={8}>
         <SimpleGrid as="section" columns={3} spacingX={matchesTablet ? 16 : 64} spacingY={10} paddingX={matchesTablet ? 0 : 32}>
-          <StyledCard width="calc(50px + 40%)" borderRadius="5%">
-            <HTML5Icon alt="HTML5 Icon" />
-          </StyledCard>
-
-          <StyledCard width="calc(50px + 40%)" borderRadius="5%">
-            <JavascriptIcon alt="Javascript icon" />
-          </StyledCard>
-
-          <StyledCard width="calc(50px + 40%)" borderRadius="5%">
-            <CSS3Icon alt="CSS3 icon" />
-          </StyledCard>
-
-          <StyledCard width="calc(50px + 40%)" borderRadius="5%">
-            <BootstrapIcon alt="Bootstrap icon" />
-          </StyledCard>
-
-          <StyledCard width="calc(50px + 40%)" borderRadius="5%">
-            <ReactIcon alt="React icon" />
-          </StyledCard>
-
-          <StyledCard width="calc(50px + 40%)" borderRadius="5%">
-            <GitIcon alt="Git icon" />
-          </StyledCard>
+          {
+            tecnologias.map(({ Svg, alt }) => (
+              <StyledCard width="calc(50px + 40%)" borderRadius="5%">
+                <Svg alt={alt} />
+              </StyledCard>
+            ))
+          }
         </SimpleGrid >
       </Center >
     </Box>
