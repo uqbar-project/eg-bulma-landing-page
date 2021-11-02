@@ -1,10 +1,26 @@
 import { Avatar } from '@chakra-ui/avatar'
-import { Box, Heading, HStack, Link, Spacer } from '@chakra-ui/layout'
-import React from 'react'
+import { IconButton } from '@chakra-ui/button'
+import { HamburgerIcon } from '@chakra-ui/icons'
+import { Heading, HStack, Link, Spacer, VStack } from '@chakra-ui/layout'
+import { Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/menu'
+import { useMediaQuery } from '@react-hook/media-query'
+import { mobileMediaQuery, tabletMediaQuery } from '../style/mediaQueries'
 
 export default function Navbar() {
+  /* TODO: Esto seria mejor manejarlo con un custom hook */
+  const matchesTablet = useMediaQuery(tabletMediaQuery)
 
   const menuItems = ['Nosotros', 'Habilidades', 'Proyectos', 'Contactos']
+
+  const scrollTo = (location) => {
+    const menuElement = document.getElementById(location)
+    const extraOffset = 32 //px
+    
+    window.scrollTo({
+      top: menuElement.getBoundingClientRect().top + window.pageYOffset - extraOffset,
+      behavior: 'smooth'
+    })
+  }
 
   return (
     <HStack
@@ -20,18 +36,26 @@ export default function Navbar() {
 
       <Spacer />
 
-      {/*  TODO: Mobile */}
-      <button class="navbar-burger is-danger button" aria-label="menu" aria-expanded="false"
-        data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </button>
+      {
+        matchesTablet ? (
+          <Menu>
+            <MenuButton
+              as={IconButton}
+              aria-label="Options"
+              icon={<HamburgerIcon />}
+              variant="outline"
+            />
+            <MenuList backgroundColor="primary">
+              {menuItems.map((item) => <MenuItem onClick={() => scrollTo(item)} href={`#${item}`}>{item}</MenuItem>)}
+            </MenuList>
+          </Menu>
+        ) : (
+          <HStack spacing={4}>
+            {menuItems.map((item) => <Link href={`#${item}`}>{item}</Link>)}
+          </HStack>
+        )
 
-      <HStack 
-      spacing={4}>
-        {menuItems.map((item) => <Link href={`#${item}`}>{item}</Link>)}
-      </HStack>
-    </HStack>
+      }
+    </HStack >
   )
 }
