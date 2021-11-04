@@ -61,11 +61,13 @@ export default function ProyectosSection() {
       </Center>
 
       <Flex direction={matchesTablet ? 'column' : 'row'} marginTop={4} gridGap={8}>
-        {proyectos.map((proyecto) => <ProyectoCard
-          title={proyecto.title}
-          img={proyecto.img}
-          content={proyecto.content}
-        />)}
+        {proyectos.map((proyecto) => (
+          <ProyectoCard
+            title={proyecto.title}
+            img={proyecto.img}
+            content={proyecto.content}
+          />)
+        )}
       </Flex>
     </Box>
   )

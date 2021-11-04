@@ -5,7 +5,7 @@ import { useMediaQuery } from '@chakra-ui/media-query'
 import { tabletMediaQuery } from '../../style/mediaQueries'
 import StyledCard from '../StyledCard'
 
-const Content = ({ matchesTablet }) => (
+const ContentCard = ({ matchesTablet }) => (
   <>
     <StyledCard boxShadow="lg">
       <Image minHeight="200px" width="auto" src="images/sal.jpg" alt="jane-doe" loading="lazy" objectFit="cover" />
@@ -34,11 +34,11 @@ export default function IntroduccionSection() {
 
   return matchesTablet ? (
     <VStack spacing={8} as="section">
-      <Content matchesTablet={matchesTablet} />
+      <ContentCard matchesTablet={matchesTablet} />
     </VStack >
   ) : (
     <HStack spacing={8} as="section">
-      <Content matchesTablet={matchesTablet} />
+      <ContentCard matchesTablet={matchesTablet} />
     </HStack>
   )
 }
