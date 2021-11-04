@@ -1,6 +1,5 @@
 import { Box, Center, Heading, VStack } from '@chakra-ui/layout'
 import { InfoOutlineIcon, EmailIcon } from '@chakra-ui/icons'
-import React from 'react'
 import { Button } from '@chakra-ui/button'
 import StyledCard from '../StyledCard'
 import CustomInput from '../CustomInput'

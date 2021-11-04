@@ -1,5 +1,4 @@
 import { Box, Center, Heading, Text } from '@chakra-ui/layout'
-import React from 'react'
 import StyledCard from '../StyledCard'
 
 export default function NosotrosSection() {

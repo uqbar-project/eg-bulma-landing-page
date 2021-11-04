@@ -1,5 +1,4 @@
 import { Box, Center, Heading, SimpleGrid } from '@chakra-ui/layout'
-import React from 'react'
 import { ReactComponent as HTML5Icon } from '../../assets/icons/icons8-html-5.svg'
 import { ReactComponent as CSS3Icon } from '../../assets/icons/icons8-css3.svg'
 import { ReactComponent as JavascriptIcon } from '../../assets/icons/icons8-javascript.svg'

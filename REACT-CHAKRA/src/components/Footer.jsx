@@ -1,5 +1,4 @@
-import { Box, Center, HStack, Link, Text, VStack } from '@chakra-ui/layout'
-import React from 'react'
+import { Link, Text, VStack } from '@chakra-ui/layout'
 
 export default function Footer() {
   return (

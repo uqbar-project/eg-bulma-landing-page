@@ -1,6 +1,5 @@
 import { Image } from '@chakra-ui/image'
 import { Heading, HStack, Text, VStack } from '@chakra-ui/layout'
-import React from 'react'
 import { useMediaQuery } from '../../util/useMediaQuery'
 import StyledCard from '../StyledCard'
 

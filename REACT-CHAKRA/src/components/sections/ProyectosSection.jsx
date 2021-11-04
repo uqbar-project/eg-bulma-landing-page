@@ -1,7 +1,6 @@
 import { Button } from '@chakra-ui/button'
 import { Image } from '@chakra-ui/image'
 import { Box, Center, Flex, Heading, Text } from '@chakra-ui/layout'
-import React from 'react'
 import { useMediaQuery } from '../../util/useMediaQuery'
 import StyledCard from '../StyledCard'
 

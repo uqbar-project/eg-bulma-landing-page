@@ -1,6 +1,5 @@
 import { Image } from '@chakra-ui/image'
 import { Link, VStack } from '@chakra-ui/layout'
-import React from 'react'
 
 export default function FloatingIcons() {
   return (
