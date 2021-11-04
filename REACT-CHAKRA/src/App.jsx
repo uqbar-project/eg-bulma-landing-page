@@ -12,11 +12,10 @@ import ProyectosSection from './components/sections/ProyectosSection'
 import ContactenosSection from './components/sections/ContactenosSection'
 import FloatingIcons from './components/FloatingIcons'
 import Footer from './components/Footer'
-import { useMediaQuery } from '@chakra-ui/media-query'
-import { tabletMediaQuery } from './style/mediaQueries'
+import { useMediaQuery } from './util/useMediaQuery'
 
 function App() {
-  const [matchesTablet] = useMediaQuery(tabletMediaQuery)
+  const { matchesTablet } = useMediaQuery()
 
   return (
     <ChakraProvider theme={theme}>

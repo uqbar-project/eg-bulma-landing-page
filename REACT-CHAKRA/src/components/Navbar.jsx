@@ -3,12 +3,10 @@ import { IconButton } from '@chakra-ui/button'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { Heading, HStack, Link, Spacer } from '@chakra-ui/layout'
 import { Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/menu'
-import { useMediaQuery } from '@chakra-ui/media-query'
-import { tabletMediaQuery } from '../style/mediaQueries'
+import { useMediaQuery } from '../util/useMediaQuery'
 
 export default function Navbar() {
-  /* TODO: Esto seria mejor manejarlo con un custom hook */
-  const [matchesTablet] = useMediaQuery(tabletMediaQuery)
+  const { matchesTablet } = useMediaQuery()
 
   const menuItems = ['Nosotros', 'Habilidades', 'Proyectos', 'Contactos']
 

@@ -1,8 +1,7 @@
 import { Image } from '@chakra-ui/image'
 import { Heading, HStack, Text, VStack } from '@chakra-ui/layout'
 import React from 'react'
-import { useMediaQuery } from '@chakra-ui/media-query'
-import { tabletMediaQuery } from '../../style/mediaQueries'
+import { useMediaQuery } from '../../util/useMediaQuery'
 import StyledCard from '../StyledCard'
 
 const ContentCard = ({ matchesTablet }) => (
@@ -12,7 +11,7 @@ const ContentCard = ({ matchesTablet }) => (
     </StyledCard>
 
     <StyledCard
-      width={matchesTablet ? '100%' : '60%' }
+      width={matchesTablet ? '100%' : '60%'}
       paddingX={6}
       paddingY={8}
       hasBorder
@@ -30,7 +29,7 @@ const ContentCard = ({ matchesTablet }) => (
 )
 
 export default function IntroduccionSection() {
-  const [matchesTablet] = useMediaQuery(tabletMediaQuery)
+  const { matchesTablet } = useMediaQuery()
 
   return matchesTablet ? (
     <VStack spacing={8} as="section">

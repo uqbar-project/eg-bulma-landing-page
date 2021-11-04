@@ -6,9 +6,8 @@ import { ReactComponent as JavascriptIcon } from '../../assets/icons/icons8-java
 import { ReactComponent as BootstrapIcon } from '../../assets/icons/icons8-bootstrap.svg'
 import { ReactComponent as ReactIcon } from '../../assets/icons/icons8-react-native.svg'
 import { ReactComponent as GitIcon } from '../../assets/icons/icons8-git.svg'
-import { useMediaQuery } from '@chakra-ui/media-query'
-import { tabletMediaQuery } from '../../style/mediaQueries'
 import StyledCard from '../StyledCard'
+import { useMediaQuery } from '../../util/useMediaQuery'
 
 
 const tecnologias = [
@@ -20,7 +19,7 @@ const tecnologias = [
   { Svg: GitIcon, alt: 'Git Icon' },
 ]
 export default function TecnologiasSection() {
-  const [matchesTablet] = useMediaQuery(tabletMediaQuery)
+  const { matchesTablet } = useMediaQuery()
 
   return (
     <Box as="section" id="Habilidades">

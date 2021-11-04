@@ -1,9 +1,8 @@
 import { Button } from '@chakra-ui/button'
 import { Image } from '@chakra-ui/image'
 import { Box, Center, Flex, Heading, Text } from '@chakra-ui/layout'
-import { useMediaQuery } from '@chakra-ui/media-query'
 import React from 'react'
-import { tabletMediaQuery } from '../../style/mediaQueries'
+import { useMediaQuery } from '../../util/useMediaQuery'
 import StyledCard from '../StyledCard'
 
 const ProyectoCard = ({ title, content, img }) => (
@@ -24,7 +23,7 @@ const ProyectoCard = ({ title, content, img }) => (
 )
 
 export default function ProyectosSection() {
-  const [matchesTablet] = useMediaQuery(tabletMediaQuery)
+  const { matchesTablet } = useMediaQuery()
 
   const proyectos = [
     {
